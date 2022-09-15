@@ -1,5 +1,70 @@
+/* GENERAL */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* UTILITY */
+
+.container{
+  max-width: 70%;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(32, 176, 133);
+  margin-top: 70px;
+}
+
+.debug{
+  background-color: rgba(199, 1, 1, 0.6);
+}
+
+.d-flex{
+  display: flex;
+}
+
+/* HEADER */
+
+header{
+  width: 100%;
+  background-color: white;
+  height: 50px;
+}
+
+/* JUMBOTRON */
+
+div.jumbotron {
+  background-color: #B4D0E7;
+  height: 500px;
+  width: 100%;
+}
+
+div.jumbotron h1, .jumbo-content{
+  text-align: center;
+}
+
+/* MAIN */
+
+section .border-card{
+  justify-content: space-between;
+}
+
+section .border-card .card{
+  background-color: coral;
+
+  /* DEBUG */
+  height: 500px;
+  width: 200px;
+}
+
+section .border-card.central{
+  margin: none;
 }
