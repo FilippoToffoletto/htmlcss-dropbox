@@ -20,7 +20,7 @@ body{
   width: 1200px;
   margin: 0 auto;
   background-color: rgb(32, 176, 133);
-  margin-top: 70px;
+  margin: 70px auto;
 }
 
 .debug{
@@ -55,16 +55,107 @@ div.jumbotron h1, .jumbo-content{
 
 section .border-card{
   justify-content: space-between;
+  padding: 10px 0px;
+  max-width: 100%;
 }
 
 section .border-card .card{
-  background-color: coral;
+  padding: 10px 10px; 
+  max-width: 300px; 
+  min-width: 30%;
 
   /* DEBUG */
+  background-color: coral;
   height: 500px;
-  width: 200px;
+  border: 1px solid black;
 }
 
 section .border-card.central{
-  margin: none;
+  padding: 10px 10px;
+  /* DEBUG */
+  height: 200px;
+  background-color: lightskyblue;
+  border: 1px solid black;
+}
+
+section .article aside{
+  width: 60%;
+
+  /* DEBUG */
+  background-color: darkgoldenrod;
+}
+section .article .text{
+  width: 40%;
+  padding: 10px 10px;
+}
+
+section .box-card{
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+  max-width: 100%;
+}
+
+section .box-card .card{
+  padding: 10px 10px; 
+  max-width: 300px; 
+  min-width: 30%;
+
+  /* DEBUG */
+  background-color: coral;
+  height: 500px;
+  border: 1px solid black;
+}
+
+/*  BOX CLIENTI */
+
+section.clients{
+  justify-content: space-around;
+  /* DEBUG */
+  background-color: #0093CE;
+  height: 400px;
+}
+
+section.clients .icons-left, .icons-right{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+section.clients .central-box{
+  width: 100%;
+  text-align: center;
+}
+
+
+section .icone-clienti{
+  /* DEBUG */
+  background-color: lightsalmon;
+  height: 200px;
+  min-width: calc(100% / 2);
+  padding: 10px 10px;
+}
+
+main .sub-title{
+  /* DEBUG */
+  background-color: #B4D0E7;
+  height: 100px;
+}
+
+main .sub-title h2{
+  display: flex;
+  padding: 10px 20px;
+  margin: auto auto;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* FOOTER */
+
+footer{
+  height: 300px;
+  background-color: black;
+  color: white;
 }
