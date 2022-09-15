@@ -13,6 +13,10 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a:hover{
+  color:#0093CE;
+}
+
 /* UTILITY */
 
 .container{
@@ -34,15 +38,39 @@ body{
 /* HEADER */
 
 header{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  display: flex;
   width: 100%;
   background-color: white;
   height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+header .left,.right{
+  display: block;
+}
+header nav ul{
+  display: flex; 
+  list-style: none;
+  align-items: center;
+}
+
+header nav ul li a{
+  display: inline-block;
+  color: #706e6e;
+  padding: 0 10px;
+  text-decoration: none;
 }
 
 /* JUMBOTRON */
 
 div.jumbotron {
   background-color: #B4D0E7;
+  margin-top: 50px;
   height: 500px;
   width: 100%;
 }
