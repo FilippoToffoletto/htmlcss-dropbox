@@ -13,6 +13,9 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a{
+  color: white;
+}
 a:hover{
   color:#0093CE;
 }
@@ -24,7 +27,7 @@ a:hover{
   width: 1200px;
   margin: 0 auto;
   background-color: rgb(32, 176, 133);
-  margin: 70px auto;
+  margin: 120px auto;
 }
 
 .debug{
@@ -33,6 +36,15 @@ a:hover{
 
 .d-flex{
   display: flex;
+}
+
+.btn{
+  display: block;
+  color: white;
+  padding: 7px 15px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: #0061FF;
 }
 
 /* HEADER */
@@ -66,18 +78,80 @@ header nav ul li a{
   text-decoration: none;
 }
 
+
+
 /* JUMBOTRON */
 
 div.jumbotron {
   background-color: #B4D0E7;
   margin-top: 50px;
+  margin-bottom: 200px;
   height: 500px;
   width: 100%;
 }
 
-div.jumbotron h1, .jumbo-content{
-  text-align: center;
+div.jumbotron{
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: left;
+  padding-top: 40px;
 }
+
+div.jumbotron h1{
+  margin: 0 auto;
+  width: 60%;
+  font-size: 5rem;
+}
+div.jumbotron .jumbo-content{
+  position: relative;
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 60%;
+  font-size: 1rem;
+}
+div.jumbotron .jumbo-text{
+  position: absolute;
+  top: 20px;
+  left: 0%;
+  width: 30%;
+}
+div.jumbotron .jumbo-img{
+  position: absolute;
+  top: 20px%;
+  right: 0%;
+  width: 70%;
+}
+
+div.jumbotron .jumbo-content a{
+  text-decoration: none;
+}
+
+div.jumbotron .jumbo-btn{
+  position: absolute;
+  top:150px;
+  left: 0%;
+}
+
+div.jumbotron .jumbo-btn a.btn-bk{
+  position: absolute;
+  color: black;
+  top: 45px;
+  left: 0%;
+  width: 100%;
+}
+
+div.jumbotron .arrow-down{
+  position: absolute;
+  top: 220px;
+  font-size: 3.5rem;
+}
+div.jumbotron .arrow-down a{
+  color: black;
+}
+
+
+
 
 /* MAIN */
 
