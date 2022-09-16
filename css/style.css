@@ -27,7 +27,7 @@ a:hover.btn{
 
 .container{
   max-width: 70%;
-  width: 1200px;
+  width: 1000px;
   margin: 0 auto;
   background-color: rgb(32, 176, 133);
   margin: 120px auto;
@@ -99,7 +99,7 @@ div.jumbotron {
   background-color: #B4D0E7;
   margin-top: 80px;
   margin-bottom: 200px;
-  height: 600px;
+  height: 740px;
   width: 100%;
 }
 
@@ -127,15 +127,16 @@ div.jumbotron .jumbo-content{
 }
 div.jumbotron .jumbo-text{
   position: absolute;
-  top: 20px;
+  font-size: 1.2rem;
+  top: 25px;
   left: 0%;
-  width: 30%;
+  width: 20%;
 }
 div.jumbotron .jumbo-img{
   position: absolute;
-  top: 20px;
-  right: 0%;
-  width: 70%;
+  top: 25px;
+  right:0%;
+  width: 80%;
 }
 
 div.jumbotron .jumbo-content a{
@@ -144,7 +145,7 @@ div.jumbotron .jumbo-content a{
 
 div.jumbotron .jumbo-btn{
   position: absolute;
-  top:160px;
+  top: 280px;
   left: 0%;
 }
 
@@ -158,7 +159,7 @@ div.jumbotron .jumbo-btn a.btn-bk{
 
 div.jumbotron .arrow-down{
   position: absolute;
-  top: 260px;
+  top: 400px;
   font-size: 3.5rem;
 }
 div.jumbotron .arrow-down a{
@@ -205,7 +206,7 @@ section .border-card .card .card-type i{
 section .border-card .card .card-text{
   border: 1px solid black;
   height: 910px;
-  padding: 20px 40px;
+  padding: 0px 40px;
   padding-right: 50px;
 }
 section .card-text ul{
@@ -214,7 +215,7 @@ section .card-text ul{
 }
 section .card-text ul li{
   display: flex;
-  padding: 10px 0;
+  padding: 8px 0;
   margin: 0px 0px 0px 10px;
 }
 section .card-text ul li.duration{
@@ -272,9 +273,22 @@ section .article aside{
   background-color: darkgoldenrod;
 }
 section .article .text{
+  padding: 50px 60px;
   width: 40%;
-  padding: 10px 10px;
 }
+section .article .text h3,p,a{
+  padding: 20px 0px;
+  text-align: left;
+}
+
+section .article .text div a.btn{
+  display: inline-block;
+  color:black;
+  background-color: white;
+  align-items: left;
+
+}
+
 
 section .box-card{
   justify-content: space-between;
@@ -342,7 +356,15 @@ main .sub-title h2{
 /* FOOTER */
 
 footer{
+
   height: 300px;
   background-color: black;
+
+}
+footer .menu{
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 80%;
   color: white;
+  align-items: center;
 }
