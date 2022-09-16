@@ -324,32 +324,70 @@ section .team-users{
 
 /*  BOX CLIENTI */
 
-section.clients{
-  justify-content: space-around;
-  /* DEBUG */
-  background-color: #0093CE;
-  height: 400px;
-}
-
 section.clients .icons-left, .icons-right{
   display: flex;
+  flex-wrap: wrap; 
+}
+
+section .icone-clienti{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 320px;
+
+  /* DEBUG */
+  border: 1px solid black;
+  max-width: calc(100% / 2);
+}
+
+section.clients{
   justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
+  /* DEBUG */
+  background-color: #0093CE;
 }
 
 section.clients .central-box{
-  width: 100%;
+  width: 60%;
   text-align: center;
 }
 
+section .icons-left .icone-clienti .team-img{
+  display: flex;
+  margin: 0 auto;
+  max-width: 70%;
+  fill: white;
+}
 
-section .icone-clienti{
-  /* DEBUG */
-  background-color: lightsalmon;
-  height: 200px;
-  min-width: calc(100% / 2);
-  padding: 10px 10px;
+section .icons-right .icone-clienti .team-img{
+  display: flex;
+  margin: 0 auto;
+  max-width: 70%;
+  fill: white;
+}
+#uno{
+  background-color: #A2D39B;
+}
+#due{
+  background-color: #61082B;
+}
+#tre{
+  background-color:#0093CE;
+}
+#quattro{
+  background-color: #FF1C1C;
+}
+#cinque{
+  background-color:#D5001F; 
+}
+#sei{
+  background-color:#B4D0E7 ;
+}
+#sette{
+  background-color: #0D2481;
+}
+#otto{
+  background-color: #FFD830;
 }
 
 main .sub-title{
