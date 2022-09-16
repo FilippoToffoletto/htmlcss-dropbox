@@ -349,9 +349,28 @@ section.clients{
 
 section.clients .central-box{
   width: 60%;
-  text-align: center;
+  padding: 30px 20px;
+}
+section .central-box .central-text hr {
+  color: black;
+  margin: 40px 0px;
+  height: 1px;
+  width: 100px;
+  background-color: black;
+}
+section .central-box .central-text .sign{
+  display: inline-block;
+  margin-top: 40px;
+}
+section .central-box .central-text{
+  overflow: auto;
+  max-height: 550px;
 }
 
+.central-text::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  }
 section .icons-left .icone-clienti .team-img{
   display: flex;
   margin: 0 auto;
