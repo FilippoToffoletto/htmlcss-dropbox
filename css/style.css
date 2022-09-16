@@ -16,8 +16,8 @@ body{
 a{
   color: white;
 }
-a:hover{
-  color:#0093CE;
+a:hover.btn{
+  background-color: #0C88FF;
 }
 
 /* UTILITY */
@@ -44,7 +44,7 @@ a:hover{
   padding: 7px 15px;
   border: 1px solid black;
   text-align: center;
-  background-color: #0061FF;
+  background-color: #0062FE;
 }
 
 /* HEADER */
@@ -56,7 +56,7 @@ header{
   display: flex;
   width: 100%;
   background-color: white;
-  height: 50px;
+  height: 80px;
   justify-content: space-between;
   align-items: center;
   z-index: 999;
@@ -73,9 +73,19 @@ header nav ul{
 
 header nav ul li a{
   display: inline-block;
-  color: #706e6e;
+  color: #555555;
   padding: 0 10px;
   text-decoration: none;
+  font-size: 1.1rem;
+}
+
+header nav ul li{
+  height: 100%;
+}
+
+header nav ul li:hover{
+  border-bottom: 2px solid black;
+  transform: scaleY(40px);
 }
 
 
@@ -84,9 +94,9 @@ header nav ul li a{
 
 div.jumbotron {
   background-color: #B4D0E7;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-bottom: 200px;
-  height: 500px;
+  height: 600px;
   width: 100%;
 }
 
@@ -97,18 +107,20 @@ div.jumbotron{
   text-align: left;
   padding-top: 40px;
 }
+div.jumbotron h1, .jumbo-content{
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 1100px;
+  width: 80%;
+}
 
 div.jumbotron h1{
-  margin: 0 auto;
-  width: 60%;
   font-size: 5rem;
 }
 div.jumbotron .jumbo-content{
   position: relative;
-  padding: 20px 0;
-  margin: 0 auto;
-  width: 60%;
   font-size: 1rem;
+  height: 400px;
 }
 div.jumbotron .jumbo-text{
   position: absolute;
@@ -118,7 +130,7 @@ div.jumbotron .jumbo-text{
 }
 div.jumbotron .jumbo-img{
   position: absolute;
-  top: 20px%;
+  top: 20px;
   right: 0%;
   width: 70%;
 }
@@ -129,21 +141,21 @@ div.jumbotron .jumbo-content a{
 
 div.jumbotron .jumbo-btn{
   position: absolute;
-  top:150px;
+  top:160px;
   left: 0%;
 }
 
 div.jumbotron .jumbo-btn a.btn-bk{
   position: absolute;
   color: black;
-  top: 45px;
+  top: 60px;
   left: 0%;
   width: 100%;
 }
 
 div.jumbotron .arrow-down{
   position: absolute;
-  top: 220px;
+  top: 260px;
   font-size: 3.5rem;
 }
 div.jumbotron .arrow-down a{
@@ -151,9 +163,17 @@ div.jumbotron .arrow-down a{
 }
 
 
-
-
 /* MAIN */
+
+section h2{
+  padding: 20px 0px;
+  font-size: 2.3rem;
+}
+
+section .selector label{
+  padding: 10px 5px;
+  font-size: 1.1rem;
+}
 
 section .border-card{
   justify-content: space-between;
@@ -162,15 +182,41 @@ section .border-card{
 }
 
 section .border-card .card{
-  padding: 10px 10px; 
   max-width: 300px; 
   min-width: 30%;
-
-  /* DEBUG */
-  background-color: coral;
-  height: 500px;
-  border: 1px solid black;
 }
+section .border-card .card .card-type{
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-bottom: none;
+  margin: 0 auto;
+  padding: 10px 0;
+  height: 40px;
+}
+section .border-card .card .card-type i{
+  margin-right: 8px;
+}
+
+section .border-card .card .card-text{
+  border: 1px solid black;
+  height: 910px;
+  padding: 30px 40px;
+  padding-right: 65px;
+}
+section .card-text ul{
+  list-style: none;
+  padding: 30px 0;
+}
+section .card-text ul li{
+  padding: 10px 0;
+  margin: 0px 0px 0px 10px;
+}
+
+section .card-text ul li i{
+  margin: 0px 0px 0px -5px;
+}
+
 
 section .border-card.central{
   padding: 10px 10px;
