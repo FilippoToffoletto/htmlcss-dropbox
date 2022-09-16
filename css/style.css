@@ -188,7 +188,8 @@ section .border-card .card{
   max-width: 300px; 
   min-width: 29%;
 }
-section .border-card .card .card-type{
+section .border-card .card .card-type,
+section .central .card-type{
   justify-content: center;
   align-items: center;
   border: 1px solid black;
@@ -249,14 +250,20 @@ section .card-text i.fa-check{
   color: #0161FF;
 }
 
-
-section .border-card.central{
-  padding: 10px 10px;
-  /* DEBUG */
-  height: 200px;
-  background-color: lightskyblue;
+section .border-card.central .card-text{
   border: 1px solid black;
+  height: 220px;
+  padding: 20px 40px;
+  padding-right: 50px;
 }
+section .central .card-text ul li.prima-riga{
+  display: flex;
+  justify-content: space-between;
+}
+section .central .card-text ul li span{
+  max-width: 60%;
+}
+
 
 section .article aside{
   width: 60%;
