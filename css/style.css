@@ -34,7 +34,7 @@ a:hover.btn{
   max-width: 70%;
   width: 1000px;
   margin: 0 auto;
-  background-color: rgb(32, 176, 133);
+  /* background-color: rgb(32, 176, 133); */
   margin: 120px auto;
 }
 
@@ -61,22 +61,30 @@ header{
   position: fixed;
   top: 0%;
   left: 0%;
-  display: flex;
   width: 100%;
   background-color: white;
-  height: 80px;
+  /* height: 80px; */
   justify-content: space-between;
   align-items: center;
   z-index: 999;
+  box-shadow: -10px -5px 20px 0px;
 }
 
 header .left,.right{
   display: block;
 }
+header nav{
+}
 header nav ul{
   display: flex; 
   list-style: none;
   align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 80px;
+}
+header nav ul li{
+  padding: 30px 15px;
 }
 
 header nav ul li a{
@@ -87,14 +95,12 @@ header nav ul li a{
   font-size: 1.1rem;
 }
 
-header nav ul li{
-  height: 100%;
-}
 
 header nav ul li:hover{
   border-bottom: 2px solid black;
   transform: scaleY(40px);
 }
+
 
 
 
@@ -225,6 +231,9 @@ section .card-text ul li{
 }
 section .card-text ul li.duration{
   color: #cccccc;
+}
+section .card-text ul li.price{
+  font-weight: 700;
 }
 
 section .card-text ul li i{
@@ -520,11 +529,15 @@ footer{
   background-color: black;
 }
 
+footer .footer-up{
+  max-width:70%;
+  margin: 0 auto;
+}
+
 footer .footer-up .menu{
   margin: 0 auto;
   max-width: 800px;
   color: white;
-  max-width: 80%;
   align-items: center;
   padding: 20px 0px;
 }
@@ -551,21 +564,25 @@ footer .footer-up .menu ul li a:hover{
   color: #0161FF;
 }
 
+
 footer .footer-down{
-  max-width: calc(80% / 5);
-  width: 800px;
-  margin: 80px 90px;
+  width: 100%;
+  max-width:1100px;
+  margin: 60px auto;
 }
 
 footer .footer-down .lingua{
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
+  justify-content: center;
   color: grey;
+}
+footer .footer-down hr{
+  max-width: calc(80% / 5);
 }
 
 footer .footer-down .lingua span{
-  padding-top: 50px;
+  padding-top: 40px;
 }
 footer .footer-down .lingua span i{
   margin-right:10px;
@@ -573,5 +590,5 @@ footer .footer-down .lingua span i{
 
 footer .footer-down .lingua span a{
   text-decoration: none;
-  color: grey\1;
+  color: grey;
 }
