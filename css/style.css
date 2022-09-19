@@ -389,9 +389,16 @@ section .icons-right .icone-clienti .team-img {
   max-width: 70%;
   fill: white;
 }
+section .icons-left .icone-clienti img{
+  filter: invert(1);
+  max-width: 80%;
+  margin: 0 auto;
+}
 
 section .icons-right .icone-clienti img{
   filter: invert(1);
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 
@@ -408,7 +415,6 @@ section .icons-right .icone-clienti img{
   background-color: #FF1C1C;
 }
 #cinque{
-  color: white;
   background-color:#D5001F; 
 }
 #sei{
@@ -446,28 +452,57 @@ main .sub-title .btn{
   background-color: white;
 }
 main .sub-title .btn a{
- text-decoration: none;
+  text-decoration: none;
   color: black;
 }
 
+main .sub-title .btn:hover a{
+  color: #0161FF;
+}
+
 /* DOMANDE FREQUENTI */
+
+section .domande{
+  height: 440px;
+  border-bottom: 1px solid black;
+}
+
+section .question{
+  justify-content: space-between;
+  font-size: .95rem;
+  height: 100px;
+  align-items: center;
+  border-top: 1px solid black;
+}
+
+
 
 section h2{
   padding: 30px 0px;
   margin: 35px auto;
 }
 
-section .question{
-  justify-content: space-between;
-  /* debug */
-  background-color: #620E2E;
+
+section .domande .question-text{
+  display: none;
 }
 
-section .question:hover {
-  display: none;
-    
+section .question:hover .question-text{
+  display: block;
 }
+
+section .question .fa-chevron-down{
+  display: block;
+}
+
 section .question .fa-chevron-up{
+  display: none;
+}
+
+section .domande .question:hover .fa-chevron-up{
+  display: block;
+}
+section .domande .question:hover .fa-chevron-down{
   display: none;
 }
 
