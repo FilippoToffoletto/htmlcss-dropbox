@@ -21,6 +21,11 @@ a:hover.btn{
   background-color: #0C88FE;
 }
 
+.box-100w{
+  width: 100%;
+  background-color: #B4D0E7;
+}
+
 
 
 /* UTILITY */
@@ -344,7 +349,7 @@ section .icone-clienti{
 section.clients{
   justify-content: space-between;
   /* DEBUG */
-  background-color: #0093CE;
+  /* background-color: #0093CE; */
 }
 
 section.clients .central-box{
@@ -378,12 +383,13 @@ section .icons-left .icone-clienti .team-img{
   fill: white;
 }
 
-section .icons-right .icone-clienti .team-img{
+section .icons-right .icone-clienti .team-img svg{
   display: flex;
   margin: 0 auto;
   max-width: 70%;
   fill: white;
 }
+
 #uno{
   background-color: #A2D39B;
 }
@@ -397,6 +403,7 @@ section .icons-right .icone-clienti .team-img{
   background-color: #FF1C1C;
 }
 #cinque{
+  color: white;
   background-color:#D5001F; 
 }
 #sei{
@@ -410,18 +417,34 @@ section .icons-right .icone-clienti .team-img{
 }
 
 main .sub-title{
-  /* DEBUG */
-  background-color: #B4D0E7;
-  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  align-items: baseline;
+  height: 350px;
+  margin: -120px auto;
+  margin-bottom: 100px;
 }
 
 main .sub-title h2{
-  display: flex;
-  padding: 10px 20px;
-  margin: auto auto;
-  justify-content: center;
-  align-items: center;
+  color: #620E2E;
+  padding: 20px 0px;
+  font-size: 2.3rem;
+  max-width: 650px;
+  vertical-align: center;
 }
+main .sub-title .btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 40px;
+  background-color: white;
+}
+main .sub-title .btn a{
+ text-decoration: none;
+  color: black;
+}
+
 
 
 /* FOOTER */
