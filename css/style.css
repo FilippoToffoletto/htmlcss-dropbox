@@ -401,6 +401,10 @@ section .icons-right .icone-clienti img{
   margin: 0 auto;
 }
 
+.icone-clienti:active{
+  border: 30px solid rgba(231, 231, 231, 0.71);
+  padding: -10px;
+}
 
 #uno{
   background-color: #A2D39B;
