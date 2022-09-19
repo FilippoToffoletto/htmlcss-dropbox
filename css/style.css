@@ -383,12 +383,19 @@ section .icons-left .icone-clienti .team-img{
   fill: white;
 }
 
-section .icons-right .icone-clienti .team-img svg{
+section .icons-right .icone-clienti .team-img {
   display: flex;
   margin: 0 auto;
   max-width: 70%;
   fill: white;
 }
+
+
+
+section .icons-right .icone-clienti img{
+  filter: invert(1);
+}
+
 
 #uno{
   background-color: #A2D39B;
@@ -445,20 +452,77 @@ main .sub-title .btn a{
   color: black;
 }
 
+/* DOMANDE FREQUENTI */
+
+section h2{
+  padding: 30px 0px;
+  margin: 35px auto;
+}
+
+section .question{
+  justify-content: space-between;
+  /* debug */
+  background-color: #620E2E;
+}
+
+section .question:hover {
+  display: none;
+    
+}
+section .question .fa-chevron-up{
+  display: none;
+}
 
 
 /* FOOTER */
 
 footer{
-
-  height: 300px;
+  justify-content: space-between;
+  /* align-items: center; */
+  height: 500px;
   background-color: black;
+}
+
+footer .footer-up .menu{
+  margin: 0 auto;
+  max-width: 800px;
+  color: white;
+  max-width: 80%;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+footer .footer-up .menu h3{
+  font-size: 1.5rem;
+  margin: 30px 0px;
+}
+
+footer .footer-up .menu ul{
+  list-style: none;
+}
+
+footer .footer-up .menu ul li{
+  padding: 10px 0px;
+}
+
+footer .footer-up .menu ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+footer .footer-up .menu ul li a:hover{
+  color: #0161FF;
+}
+
+footer .footer-down{
+  flex-direction: column;
+  align-items: center;
+  max-width: calc(73% / 5);
+  color: white;
+  margin-top: 50px;
+}
+
+footer .footer-down .lingua{
 
 }
-footer .menu{
-  margin: 0 auto;
-  max-width: 1100px;
-  width: 80%;
-  color: white;
-  align-items: center;
-}
+
