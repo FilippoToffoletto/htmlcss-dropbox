@@ -294,7 +294,6 @@ section .article .text div a.btn{
 
 }
 
-
 section .box-card{
   justify-content: space-between;
   flex-wrap: wrap;
@@ -307,9 +306,9 @@ section .box-card .card{
   min-width: 30%;
     margin-bottom: 20px;
 
-  /* DEBUG */
+  /* DEBUG
   background-color: coral;
-  border: 1px solid black;
+  border: 1px solid black; */
 }
 
 section .box-card .card .box-text h3,p{
@@ -340,10 +339,11 @@ section .icone-clienti{
   align-items: center;
   width: 320px;
   height: 320px;
+  max-width: calc(100% / 2); 
 
-  /* DEBUG */
-  border: 1px solid black;
-  max-width: calc(100% / 2);
+  /* DEBUG
+  border: 1px solid black; */
+
 }
 
 section.clients{
@@ -389,8 +389,6 @@ section .icons-right .icone-clienti .team-img {
   max-width: 70%;
   fill: white;
 }
-
-
 
 section .icons-right .icone-clienti img{
   filter: invert(1);
@@ -515,14 +513,26 @@ footer .footer-up .menu ul li a:hover{
 }
 
 footer .footer-down{
-  flex-direction: column;
-  align-items: center;
-  max-width: calc(73% / 5);
-  color: white;
-  margin-top: 50px;
+  max-width: calc(80% / 5);
+  width: 800px;
+  margin: 80px 90px;
 }
 
 footer .footer-down .lingua{
-
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  color: grey;
 }
 
+footer .footer-down .lingua span{
+  padding-top: 50px;
+}
+footer .footer-down .lingua span i{
+  margin-right:10px;
+}
+
+footer .footer-down .lingua span a{
+  text-decoration: none;
+  color: grey\1;
+}
