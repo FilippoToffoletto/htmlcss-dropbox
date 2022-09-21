@@ -282,9 +282,6 @@ section .central .card-text ul li span{
 
 section .article aside{
   width: 60%;
-
-  /* DEBUG */
-  background-color: darkgoldenrod;
 }
 section .article .text{
   padding: 50px 60px;
@@ -494,34 +491,52 @@ section h2{
   padding: 30px 0px;
   margin: 35px auto;
 }
+/* DOMANDE FREQUENTI */
 
-
-section .domande .question-text{
-  display: none;
+section.question{
+  border-bottom: 1px solid black;
 }
 
-/* section .question:hover .question-text{
-  display: block;
-} */
-
-section .question .fa-chevron-down{
-  display: block;
+.faq{
+  padding: 25px  0px;
+  border-top: 1px solid black;
 }
 
-section .question .fa-chevron-up{
-  display: none;
-}
-
-section .domande .question:hover .fa-chevron-up{
-  display: block;
-}
-section .domande .question:hover .fa-chevron-down{
-  display: none;
-}
-section .domande .question:checked p{
+.faq h3{
   display: inline-block;
-  padding-top: 30px;
 }
+.faq .fa-solid{
+  align-items: center;
+  justify-content: flex-end;
+}
+
+section .question p{
+  display: none;
+}
+.domande h3:hover ~ p{
+  display: block;
+}
+.faq p {
+  display: none;
+}
+
+.faq h3:hover ~ p {
+  display: block;
+}
+
+.fa-chevron-down{
+  display: inline-block;
+}
+.fa-chevron-up{
+  display: none;
+}
+.faq:hover .fa-chevron-up{
+  display: inline-block;
+}
+.faq:hover .fa-chevron-down{
+  display: none;
+} 
+
 
 
 /* FOOTER */
